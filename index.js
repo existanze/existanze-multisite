@@ -12,8 +12,8 @@ function Construct(options,callback){
 
     var self = this;
 
-    var _subdomain = require('../subdomain').subdomain(options.options);
 
+    var _subdomain = options.multi;
 
     // "Protected" properties. We want modules like the blog to be able
     // to access these, thus no variables defined in the closure
